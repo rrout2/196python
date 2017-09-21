@@ -3,7 +3,8 @@ import time
 boo = True
 num = 0
 
-print("This program takes a positive integer, and will multiply it by 3 and add 1 if it is odd, or will half it if it is even. \nThis is repeated until the final number is 1!")
+print("This program takes a positive integer, and will multiply it by 3 and add 1 if it is odd, "
+      "or will half it if it is even. \nThis is repeated until the final number is 1!", sep = "")
 time.sleep(3)
 while boo or num <= 0:
     try:
