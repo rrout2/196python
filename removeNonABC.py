@@ -6,12 +6,16 @@ standardLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 
 def cleanStr(st):
     length = len(st)
-    spot = length - 1;
-    while spot >= 0:
-        if st[spot] not in standardLetters:
-            st = st.replace(st[spot], "")
-            length -= 1
-        spot -= 1
-    return st
-
-print(cleanStr("he7l"))
+    spot = 0
+    result = ''
+    while spot < length:
+        if st[spot] in standardLetters:
+            result += st[spot]
+        spot += 1
+    return result
+again = 'y'
+while again[0] == 'y' or again[0] == 'Y':
+    inp = input("What string would you like cleaned? ")
+    print("You typed", inp)
+    print("Your cleaned string is ", cleanStr(inp), ".", sep="")
+    again = input("Would you like to try again? ")
