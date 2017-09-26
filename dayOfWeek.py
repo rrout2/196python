@@ -3,7 +3,7 @@ daysOfWeek = ['monday', 'tuesday', 'wednesday', 'thursday',
 
 def day_of_the_week(day, n):
     newDay = n + daysOfWeek.index(day)
-    while newDay > len(daysOfWeek) - 1:
+    if newDay > len(daysOfWeek) - 1:
         newDay %= 7
     return daysOfWeek[newDay]
 
