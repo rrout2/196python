@@ -11,4 +11,5 @@ def is_palindrome(s):
             return False
         front += 1
         back -= 1
+
     return True
