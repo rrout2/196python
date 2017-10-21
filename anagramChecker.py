@@ -24,8 +24,8 @@ def is_anagram(s1, s2):
             return False
         else:
             st2 = st2.replace(s1[spot], "")
-        if len(st2) > 0:
-            return False
+    if len(st2) > 0:
+        return False
     return True
 
 
